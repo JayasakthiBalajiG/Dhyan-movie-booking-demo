@@ -1,0 +1,28 @@
+server:
+  port: 3000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dhyanmoviebooking
+    username: postgres
+    password: sql7
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show_sql: true
+
+  application:
+    name: TicketBookingApplication
+
+  profiles:
+    active: dev
+
+
+
+
+
+
